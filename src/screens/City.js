@@ -5,7 +5,6 @@ import {
     SafeAreaView,
     Text,
     StyleSheet,
-    StatusBar,
     ImageBackground
 } from 'react-native'
 import IconText from '../components/IconText.js'
@@ -21,7 +20,7 @@ const City = () => {
         riseSetWrapper,
         riseSetText,
         rowLayout
-    } = styles // Move this line up
+    } = styles 
     return (
         <SafeAreaView style={container}>
             <ImageBackground
@@ -63,7 +62,6 @@ const styles = StyleSheet.create({
     },
     container: {
         flex: 1,
-        marginTop: StatusBar.currentHeight || 0
     },
     image: {
         flex: 1,
